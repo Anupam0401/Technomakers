@@ -1,8 +1,8 @@
-$ git init
-$ touch a.txt
+$ git init // made a repository
+$ touch a.txt 
 $ echo a>a.txt
-$ git add .
-$ git commit -m ”1st commit”
+$ git add . // staged all the files in te repository
+$ git commit -m ”1st commit” // commited all the changes made
 $ git graph 
 $ mkdir b
 $ cd b
