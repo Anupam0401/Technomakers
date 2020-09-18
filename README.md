@@ -1,5 +1,6 @@
-Question 1 :
-Write a shell script for the following [Warm-up]
+Questions-
+
+1.Write a shell script for the following [Warm-up]
 (a) Initialize git.
 (b) Create a file with content as iitbhilai name it as <roll-no-member-1>.
 (c) Now copy the same file w.r.t to the number of members of your group and rename as
@@ -9,7 +10,7 @@ Write a shell script for the following [Warm-up]
 (e) Commit all the files at once.
 (f) Show the git-graph.
   
-  2. Redo Problem 1 but with incremental commits. You have to show the git-graph after every
+2. Redo Problem 1 but with incremental commits. You have to show the git-graph after every
 commit. Submit a LATEX generated pdf which will depict how the git repository evolved.
 
 3. Write a shell script for the following [Git-Objects]
