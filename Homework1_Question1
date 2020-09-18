@@ -1,0 +1,16 @@
+$ mkdir Question1
+$ cd Question1
+$ git init ..(a)
+$ touch 11940160.txt
+$ echo ”iitbhilai” >>11940160.txt
+$ cp 11940160.txt 11940020.txt 
+$ cp 11940160.txt 11941040.txt
+$ mkdir AnupamKumar 
+$ mkdir AbdurRahmanKhan
+$ mkdir RuchitPrakashSaxena
+$ mv 11940160.txt AnupamKumar
+$ mv 11940020.txt AbdurRahamKhan
+$ mv 11941040.txt RuchitPrakashSaxena
+$ git add . 
+$ git commit -m ”commited all the files at once ”
+$ git graph
