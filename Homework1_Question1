@@ -1,8 +1,7 @@
-$ mkdir Question1
-$ cd Question1
-$ git init ..(a)
-$ touch 11940160.txt
-$ echo ”iitbhilai” >>11940160.txt
+$ mkdir q1
+$ cd q1
+$ git init 
+$ echo iitbhilai >>11940160.txt
 $ cp 11940160.txt 11940020.txt 
 $ cp 11940160.txt 11941040.txt
 $ mkdir AnupamKumar 
