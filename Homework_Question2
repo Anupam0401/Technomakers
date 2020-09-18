@@ -1,8 +1,7 @@
-$ mkdir Question2
-$ cd Question2
+$ mkdir q2
+$ cd q2
 $ git init
-$ touch 11940160.txt
-$ echo ”iitbhilai” >>11940160.txt
+$ echo iitbhilai >>11940160.txt    \\explicitly this command will create .txt file
 $ cp 11940160.txt 11940020.txt
 $ cp 11940160.txt 11941040.txt
 $ mkdir AnupamKumar
