@@ -1,0 +1,51 @@
+$ git init                      // initialized an empty repository
+$ touch a.txt 
+$ echo a>>a.txt                 //insert a in a.txt file
+$ git add .                     // staged all the files in the repository
+$ git commit -m ”1st commit”    // commited all the changes made with the message flag
+$ git graph 
+$ mkdir b                       //created new folder in the repository
+$ cd b
+$ touch b.txt
+$ echo b>>b.txt
+$ git add .                     //staged all the changes made in the repository
+$ git commit -m ”2nd commit”    //commited all the changes made
+$ cd ..
+$ git graph 
+$ mkdir c                      //created new folder in the repository
+$ touch c.txt
+$ git add .                    //staged all the changes made in the repository
+$ cd ..
+$ git commit -m ”3rd commit”
+$ git graph 
+$ ls 
+$ git rm -r b                 //removed a folder from the repository
+$ git commit -m ”removed a directory and 4th commit” 
+$ git graph 
+$ ls 
+$ git rm -r c                 //removed a folder from the repository
+$ mkdir d                     //created new folder in the repository
+$ cd d
+$ touch d.txt 
+$ touch e.txt 
+$ echo a>>d.txt 
+$ echo b>>e.txt 
+$ git add .                  //staged all the changes made in the repository
+$ cd ..
+$ git commit -m ”removed a directory and 5th commit” 
+$ git graph
+$ ls 
+$ git rm a.txt 
+$ git commit -m ”removed a content and 6th commit” 
+$ git graph
+$ ls 
+$ git rm -r d               //removed a folder from the repository
+$ mkdir f   //created new folder in the repository
+$ cd f 
+$ touch f.txt 
+$ touch g.txt 
+$ echo a>>f.txt 
+$ git add .                 //staged all the changes made in the repository 
+$ cd ..
+$ git commit -m ”removed a directory and 7th commit” 
+$ git graph
