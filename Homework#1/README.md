@@ -1,4 +1,4 @@
-Questions-
+Questions of Homework#1-
 
 1.Write a shell script for the following [Warm-up]
   (a) Initialize git.
