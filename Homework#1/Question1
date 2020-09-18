@@ -4,9 +4,9 @@ $ git init                                             //to associate the dir wi
 $ echo iitbhilai >>11940160.txt                   //can also be done using vim text editor(git bash) by command- " vi 11940160.txt "
 $ cp 11940160.txt 11940020.txt                        //to copy contents from one file to another
 $ cp 11940160.txt 11941040.txt
-$ mkdir AnupamKumar                                 //created a directory of the member :Anupam
-$ mkdir AbdurRahmanKhan                             //created a directory of the member :AbdurRahmanKhan
-$ mkdir RuchitPrakashSaxena                          //created a directory of the member :Ruchit
+$ mkdir AnupamKumar                                 //created a directory of the 1st member :Anupam
+$ mkdir AbdurRahmanKhan                             //created a directory of the 3rd member :AbdurRahmanKhan
+$ mkdir RuchitPrakashSaxena                          //created a directory of the 2nd member :Ruchit
 $ mv 11940160.txt AnupamKumar
 $ mv 11940020.txt AbdurRahamKhan
 $ mv 11941040.txt RuchitPrakashSaxena                //to move contents from one file to another
