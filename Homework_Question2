@@ -1,0 +1,22 @@
+$ mkdir Question2
+$ cd Question2
+$ git init
+$ touch 11940160.txt
+$ echo ”iitbhilai” >>11940160.txt
+$ cp 11940160.txt 11940020.txt
+$ cp 11940160.txt 11941040.txt
+$ mkdir AnupamKumar
+$ mkdir AbdurRahmanKhan
+$ mkdir RuchitPrakashSaxena
+$ mv 11940160.txt AnupamKumar
+$ mv 11940020.txt AbdurRahamKhan
+$ mv 11941040.txt RuchitPrakashSaxena
+$ git add AnupamKumar
+$ git commit -m ”commited 1st member ”
+$ git graph 
+$ git add AbdurRahmanKhan
+$ git commit -m ”commited 2nd member ”
+$ git graph 
+$ git add RuchitPrakashSaxena
+$ git commit -m ”commited 3rd member ”
+$ git graph
