@@ -2,13 +2,14 @@ $ find .git/objects
 	.git/objects
 	.git/objects/info
 	.git/objects/pack
+	
 $ find .git/objects -type f         	  //to show different types of objects in .git/objects(object database)
 
 $  git cat-file -t <object>         	  //shows us the type of the object represented by a particular hash
 
 $ git cat-file -p <object>                //shows the contents of the file associated with the hash value of the object
 
-we can also use : -
+we can also use -
 $ git cat-file --batch             	  //to print object information and contents for each object provided by standard_input(stdin)
 
 here,<object> is 40-hex hash value of object/node in git-graph
