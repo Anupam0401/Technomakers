@@ -1,15 +1,15 @@
-$ mkdir q1
-$ cd q1
-$ git init 
-$ echo iitbhilai >>11940160.txt
-$ cp 11940160.txt 11940020.txt 
+$ mkdir q1                                                   //create directory
+$ cd q1                                                   //go into current dir
+$ git init                                             //to associate the dir with git tool
+$ echo iitbhilai >>11940160.txt                   //can also be done using vim test editor(git bash) by vi 11940160.txt 
+$ cp 11940160.txt 11940020.txt                        //to copy contents from one file to another
 $ cp 11940160.txt 11941040.txt
 $ mkdir AnupamKumar                                 //created a directory of the first member :Anupam
 $ mkdir AbdurRahmanKhan                             //created a directory of the second member :AbdurRahmanKhan
 $ mkdir RuchitPrakashSaxena                          //created a directory of the third member :Ruchit
 $ mv 11940160.txt AnupamKumar
 $ mv 11940020.txt AbdurRahamKhan
-$ mv 11941040.txt RuchitPrakashSaxena
-$ git add .                                         //staged all the changes
+$ mv 11941040.txt RuchitPrakashSaxena                //to move contents from one file to another
+$ git add .                                         //staged all the changes at once
 $ git commit -m ”commited all the files at once ”   //commited all the changes
 $ git graph
