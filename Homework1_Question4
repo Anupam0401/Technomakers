@@ -15,6 +15,7 @@ $ git graph
 $ mkdir c                      //created new folder in the repository
 $ touch c.txt
 $ git add .                    //staged all the changes made in the repository
+$ cd ..
 $ git commit -m ”3rd commit”
 $ git graph 
 $ ls 
@@ -45,5 +46,6 @@ $ touch f.txt
 $ touch g.txt 
 $ echo a>>f.txt 
 $ git add .                 //staged all the changes made in the repository 
+$ cd ..
 $ git commit -m ”removed a directory and 7th commit” 
 $ git graph
