@@ -4,12 +4,12 @@ $ git init
 $ echo iitbhilai >>11940160.txt
 $ cp 11940160.txt 11940020.txt 
 $ cp 11940160.txt 11941040.txt
-$ mkdir AnupamKumar 
-$ mkdir AbdurRahmanKhan
-$ mkdir RuchitPrakashSaxena
+$ mkdir AnupamKumar               //Anupam
+$ mkdir AbdurRahmanKhan          //AbdurRahmanKhan
+$ mkdir RuchitPrakashSaxena      //Ruchit
 $ mv 11940160.txt AnupamKumar
 $ mv 11940020.txt AbdurRahamKhan
 $ mv 11941040.txt RuchitPrakashSaxena
 $ git add . 
-$ git commit -m ”commited all the files at once ”
+$ git commit -m ”commited all the files at once ”   
 $ git graph
