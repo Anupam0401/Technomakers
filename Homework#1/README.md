@@ -1,4 +1,4 @@
-Questions of Homework#1-
+Questions of Homework#1:-
 
 1.Write a shell script for the following [Warm-up]
   (a) Initialize git.
@@ -24,4 +24,3 @@ You are allowed to use git native commands to extract information.
 4. List the sequence of shell/git commands that generates the following git graph. [Git-graph]
 Incrementally show the git graph after every commit listing the shell/git commands executed
 before it.
-
