@@ -1,7 +1,7 @@
-$ find .git/objects\\
-	.git/objects\\
-	.git/objects/info\\
-	.git/objects/pack\\
+$ find .git/objects
+	.git/objects
+	.git/objects/info
+	.git/objects/pack
 $ find .git/objects -type f         \\to show different types of objects in .git/objects(object database)
 
 $  git cat-file -t <object>            \\shows us the type of the object represented by a particular hash
