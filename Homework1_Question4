@@ -1,10 +1,10 @@
 $ git init                      // initialized an empty repository
 $ touch a.txt 
-$ echo a>>a.txt
+$ echo a>>a.txt                 //insert a in a.txt file
 $ git add .                     // staged all the files in the repository
 $ git commit -m ”1st commit”    // commited all the changes made with the message flag
 $ git graph 
-$ mkdir b //created new folder in the repository
+$ mkdir b                       //created new folder in the repository
 $ cd b
 $ touch b.txt
 $ echo b>>b.txt
@@ -15,7 +15,6 @@ $ git graph
 $ mkdir c                      //created new folder in the repository
 $ touch c.txt
 $ git add .                    //staged all the changes made in the repository
-$ cd ..
 $ git commit -m ”3rd commit”
 $ git graph 
 $ ls 
@@ -45,7 +44,6 @@ $ cd f
 $ touch f.txt 
 $ touch g.txt 
 $ echo a>>f.txt 
-$ git add .             //staged all the changes made in the repository
-$ cd .. 
+$ git add .                 //staged all the changes made in the repository 
 $ git commit -m ”removed a directory and 7th commit” 
 $ git graph
