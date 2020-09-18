@@ -1,0 +1,51 @@
+$ git init
+$ touch a.txt
+$ echo a>a.txt
+$ git add .
+$ git commit -m ”1st commit”
+$ git graph 
+$ mkdir b
+$ cd b
+$ touch b.txt
+$ echo b>>b.txt
+$ git add .
+$ git commit -m ”2nd commit”
+$ cd ..
+$ git graph 
+$ mkdir c
+$ touch c.txt
+$ git add .
+$ cd ..
+$ git commit -m ”3rd commit”
+$ git graph 
+$ ls 
+$ git rm -r b 
+$ git commit -m ”removed a directory and 4th commit” 
+$ git graph 
+$ ls 
+$ git rm -r c 
+$ mkdir d 
+$ cd d
+$ touch d.txt 
+$ touch e.txt 
+$ echo a>>d.txt 
+$ echo b>>e.txt 
+$ git add . 
+$ cd ..
+$ git commit -m ”removed a directory and 5th commit” 
+$ git graph
+$ ls 
+$ git rm a.txt 
+$ git commit -m ”removed a content and 6th commit” 
+$ git graph
+$ ls 
+$ git rm -r d 
+$ mkdir f 
+$ cd f 
+$ touch f.txt 
+$ touch g.txt 
+$ echo a>>f.txt 
+$ git add . 
+$ cd .. 
+$ git commit -m ”removed a directory and 7th commit” 
+$ git graph
