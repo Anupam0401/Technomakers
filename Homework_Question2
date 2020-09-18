@@ -11,7 +11,7 @@ $ mv 11940160.txt AnupamKumar
 $ mv 11940020.txt AbdurRahmanKhan
 $ mv 11941040.txt RuchitPrakashSaxena
 $ git add AnupamKumar
-$ git commit -m ”commited 1st member ”
+$ git commit -m ”commited 1st member ”              \\commiting changes to files one by one
 $ git graph                       \\this will make git-graph pdf first time after committing details of 1st member
 $ git add AbdurRahmanKhan
 $ git commit -m ”commited 2nd member ”
