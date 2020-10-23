@@ -1,0 +1,196 @@
+\documentclass{article}
+\usepackage{times,amsmath,amsthm,amsfonts,eucal,graphicx}
+\usepackage{subcaption}
+
+
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% A few symbols that we will be using often in this course.
+\newcommand{\indep}{{\bot\negthickspace\negthickspace\bot}}
+\newcommand{\notindep}{{\not\negthickspace\negthinspace{\bot\negthickspace\negthickspace\bot}}}
+\newcommand{\definedtobe}{\stackrel{\Delta}{=}}
+\renewcommand{\choose}[2]{{{#1}\atopwithdelims(){#2}}}
+\newcommand{\argmax}[1]{{\hbox{$\underset{#1}{\mbox{argmax}}\;$}}}
+\newcommand{\argmin}[1]{{\hbox{$\underset{#1}{\mbox{argmin}}\;$}}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{lecnum}{#1}
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.58in { {\bf [CS200]-STNT-2
+                        \hfill Fall 2020-21} }
+    \hbox to 6.58in { {\bf 
+                        \hfill } }
+       \vspace{4mm}
+       \hbox to 6.28in { {\Large \hfill Homework: 02 \hfill} }
+       \vspace{5mm}
+       \hbox to 2.28in { {\textbf{16. Technomakers:} 
+       		    $\hspace*{0.01mm}$ Anupam Kumar (11940160), Abdur Rahman Khan (11940020),
+       		$\hspace*{0.1mm}$Ruchit Prakash Saxena (11941040)} }
+      \vspace{1mm}
+  \hbox to 1.0in { {    } }
+  
+}
+   }
+   \end{center}
+   
+   \vspace*{2cm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+        {[\arabic{equation}]}{\usecounter{equation}
+         \setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+         \setlength{\labelwidth}{1.6truecm}}}
+\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{CAPTION}{.eps FILE TO INCLUDE}{WIDTH-IN-INCHES}
+\newcommand{\fig}[4]{
+			\begin{center}
+	                \includegraphics[width=#4,clip=true]{#3} \\
+			Figure \thelecnum.#1:~#2
+			\end{center}
+	}
+
+\theoremstyle{definition}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}{Solution of problem}
+
+% \newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+%FILL IN THE RIGHT INFO.
+%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+\lecture{1}{}{xxx}
+%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+
+% **** YOUR NOTES GO HERE
+\textbf{(a)}\\
+The git commands are as follows (as written in the git visualiser): \\\\
+$ \$ $ git commit\\
+$ \$ $ git branch Test$\hspace*{3cm}$//1st branch created\\
+$ \$ $ git commit\\
+$ \$ $ git branch Best$\hspace*{3cm}$//2nd branch created\\
+$ \$ $ git checkout Test\\
+$ \$ $ git commit\\
+$ \$ $ git checkout master\\
+$ \$ $ git commit\\
+$ \$ $ git checkout Best\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout Test\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout master\\
+$ \$ $ git commit\\
+$ \$ $ git checkout -b bugFix\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout master\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout Best\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git merge Test\\
+$ \$ $ git checkout bugFix\\
+$ \$ $ git merge master\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout master\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout Test\\
+$ \$ $ git merge Best\\
+$ \$ $ git branch -d Best\\
+$ \$ $ git checkout master\\
+$ \$ $ git branch -d Test\\\\\\\\\\\\\\
+
+
+
+\textbf{(b)}\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout -b feature\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git checkout master\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git merge feature\\
+$ \$ $ git commit\\
+$ \$ $ git branch newFeature\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git tag v1\\
+$ \$ $ git commit\\
+$ \$ $ git checkout newFeature\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git commit\\
+$ \$ $ git rebase master$\sim$2\\
+$ \$ $ git checkout master$\sim$2\\
+$ \$ $ git tag v2\\
+$ \$ $ git checkout newFeature\\\\\\\\\\\\\\\\\\\\\\\\
+
+\textbf{(c)}\\
+SHA hash value is the unique ID consiting of long cryptographic strings of letters and numbers containing the details of a git commit object.\\
+For a merge commit , it contains details about both the commmits which is merged .
+\\The information that it stores is :\\
+commit author, \\date,\\ stored data and \\also the hash values of both the commits(i.e., the latest commit of branch which is merged and the latest commit of branch into which it is merged) before it.\\\\
+The shasum hash value for merge commit essentially stores only the details of the blobs of the two commits in hash value which helps git to keep track of which branch is merged into the other branch.\\\\
+
+Also, the SHASUM value of the latest commit can be known by using \\
+\textbf{$ \$ $ git log -1} command in git bash.\\\\
+The difference in the commits can be seen by using the command \textbf{$ \$ $ git log -p}.\\
+
+
+\end{document}
